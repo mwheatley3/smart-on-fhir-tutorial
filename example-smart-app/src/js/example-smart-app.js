@@ -48,6 +48,9 @@
           p.fname = fname;
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
+          
+          console.log('patient', patient)
+          console.log('p', p)
 
           if (typeof systolicbp != 'undefined')  {
             p.systolicbp = systolicbp;
