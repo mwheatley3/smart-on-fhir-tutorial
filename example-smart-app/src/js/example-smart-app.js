@@ -37,6 +37,8 @@
           }
 
           var height = byCodes('8302-2');
+          var weight = byCodes('29463-7');
+          console.log('weight', weight);
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
           var diastolicbp = getBloodPressureValue(byCodes('55284-4'),'8462-4');
           var hdl = byCodes('2085-9');
@@ -49,8 +51,8 @@
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
           
-          console.log('patient', patient)
-          console.log('p', p)
+          console.log('patient', patient);
+          console.log('p', p);
 
           if (typeof systolicbp != 'undefined')  {
             p.systolicbp = systolicbp;
